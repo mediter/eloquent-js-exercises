@@ -8,7 +8,7 @@ function min(a, b) {
 
 function isEven(number) {
   if (number < 0) {
-    // with this, it would result in:
+    // without this, it would result in:
     //   RangeError: Maximum call stack size exceeded
     return isEven(number * -1);
   } else if (number === 0) {
