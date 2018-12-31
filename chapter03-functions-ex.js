@@ -25,7 +25,7 @@ function isEven(number) {
 function countBs(source) {
   let count = 0;
   for (var i=0; i < source.length; i++) {
-    if (source[i] === "B") { count += 1 }
+    if (source[i] === "B") { count += 1; }
   }
 
   return count
@@ -34,12 +34,12 @@ function countBs(source) {
 function countChar(source, targetChar) {
   let count = 0;
   for (var i=0; i < source.length; i++) {
-    if (source[i] === targetChar) { count += 1 }
+    if (source[i] === targetChar) { count += 1; }
   }
 
-  return count
+  return count;
 }
 
 function countBsImproved(source) {
-  return countChar(source, "B")
+  return countChar(source, "B");
 }
