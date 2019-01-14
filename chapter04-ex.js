@@ -167,10 +167,8 @@ function deepEqual(data1, data2) {
       return data1 === data2;
     } else {
       const keys = Object.keys(data1);
-      for (const i in keys) {
+      for (const key of keys) {
         console.log('key deepcompare');
-
-        const key = keys[i];
 
         if (!deepEqual(data1[key], data2[key])) {
           return false;
