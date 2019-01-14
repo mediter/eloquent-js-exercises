@@ -167,6 +167,9 @@ function deepEqual(data1, data2) {
       return data1 === data2;
     } else {
       const keys = Object.keys(data1);
+
+      // for-of: individual item inside enumerable
+      // for-in: each index of elements in enumerable
       for (const key of keys) {
         console.log('key deepcompare');
 
