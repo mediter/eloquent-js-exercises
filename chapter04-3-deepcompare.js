@@ -11,7 +11,7 @@ var isObject = (input) => {
   return typeof(input) === 'object';
 }
 
-/* 
+/*
   Write a function deepEqual that takes two values and
   returns true only if they are the same value or are
   objects with the same properties, where the values of the
@@ -40,9 +40,9 @@ function deepEqual(data1, data2) {
       const keys = Object.keys(data1);
       for (const i in keys) {
         console.log('key deepcompare');
-        
+
         const key = keys[i];
-        
+
         if (!deepEqual(data1[key], data2[key])) {
           return false;
         }
